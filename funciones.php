@@ -21,7 +21,7 @@ function eliminarProducto($indice) {
     if (isset($_SESSION['carrito'][$indice])) {
         $_SESSION['eliminados'][] = $_SESSION['carrito'][$indice];
         unset($_SESSION['carrito'][$indice]);
-        $_SESSION['carrito'] = array_values($_SESSION['carrito']); // Reindexar
+        $_SESSION['carrito'] = array_values($_SESSION['carrito']); // reorganizar los números de posición:[0] => "Camisa"[1] => "Pantalón"[2] => "Zapatos"
     }
 }
 

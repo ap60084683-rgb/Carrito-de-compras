@@ -1,5 +1,5 @@
 <?php
-// Este archivo solo contiene funciones, no lleva session_start()
+// Este archivo solo contiene funciones
 
 function agregarProducto($nombre, $precio, $cantidad) {
     $_SESSION['carrito'][] = [
